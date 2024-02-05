@@ -3,6 +3,7 @@ import { prisma } from '../prisma'
 
 export function PrismaAdapter(): Adapter {
   return {
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
     async createUser(user) {},
 
     async getUser(id) {

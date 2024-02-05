@@ -6,7 +6,7 @@ import { ClaimUsernameForm } from './components/ClaimUsernameForm'
 export default function Home() {
   return (
     <Container>
-      <Hero>
+      <Hero as="div">
         <Heading size="4xl">Agendamento descomplicado</Heading>
         <Text size="xl">
           Conecte seu calendário e permita que as pessoas marquem agendamentos

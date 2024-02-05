@@ -52,9 +52,11 @@ export function ClaimUsernameForm() {
 
       <FormAnnotation>
         <Text size="sm">
-          {errors.username
-            ? errors.username.message
-            : 'Digite o nome do usuário'}
+          {errors.username ? (
+            <Text>{errors.username.message}</Text>
+          ) : (
+            <Text>Digite o nome do usuário</Text>
+          )}
         </Text>
       </FormAnnotation>
     </>
